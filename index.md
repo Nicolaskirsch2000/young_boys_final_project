@@ -24,4 +24,10 @@ Trump and obama
 
 Trump vs Obame v2
 
-###
+### Good, now, what do we learn from quotebank on US favorability across the world ? 
+
+New sentiment 
+
+Political vs cultural
+
+Most common topics

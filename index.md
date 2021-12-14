@@ -2,7 +2,13 @@
 
 ### PEW analysis, what does it says ? 
 
-Heatmap of PEW
+Pew Research Center is an American center that conducts public opinion polling to analyze the issues, attitudes, and trends shaping the world. They study a wide range of topics such as politics, immigration, ethnicity, religion, economy, and science. One of the principal subjects in these researches is U.S. global image and reputation, i.e., what people around the world like about American society and politics. In Pew's survey, random people worldwide are asked to express an opinion of the U.S. The provided choices are "Very favorable," "Somewhat favorable," "Somewhat unfavorable," "Very unfavorable," "Refused," and "Don't know." The pew research center releases the results of this study once per year.
+In this work, we extract the U.S. favorability from the PEW datasets for 2015-2020, the same years that we have data in QuoteBank.  
+The following figure shows the average of the U.S. favorability in different countries every year. The blank boxes represent the years that the study is not conducted in that specific country.
+
+![PEW_Heatmap](/pew_heatmap.jpg)
+
+As we see in this heatmap, the study covers only 52 out of 195 countries in the world. In addition, only 9 countries in this study have the results for all the years between 2015 till 2020. 
 
 ### Quotebank : what does it says ? 
 

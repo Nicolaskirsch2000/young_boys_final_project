@@ -57,4 +57,4 @@ Political vs cultural
 
 Most common topics
 
-<iframe src="final_map.html" style="width: 1000px; height: 400px; border: 0px"></iframe>
+<iframe src="final_map.html" style="width: 1000px;  height: 400px; border: 0px"></iframe>

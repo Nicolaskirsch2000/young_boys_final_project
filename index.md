@@ -20,6 +20,20 @@ Trump and obama
 
 ### This is an issue ? Could we improve comparability ? 
 
+#### Sentiment analysis tool 
+
+Until now, all the sentiment analysis has been done using the Natural Language Toolkit (NLTK) library. This is a referene for sentiment analysis, but many other tools are available, and could potentially help up improve our results. It is indeed possible that the NLTK tool does not apply well to our data and some other would better analyse the Quotebank citations. 
+
+To verify this, a random sample of quotes was extracted and a sentiment score (-1, -0.5, 0, 0.5, 1) was assigned by humans to each quote. The different tools were then tested on the sentiment score were compared. The tools used were : NTLK, Flair, and TextBlob. The accuracies are shown below : 
+
+| | NLTK | TextBlob | Flair | 
+|-------|:-------:|-------|-------| 
+|Accuracy| 54 % | 42 % | 66 % |
+
+
+
+NLTK is thus not the most accurate tool for the data at hand, as its accuracy was of 54% compared to Flair, with 66%. This missmatch in sentiment might be a reason for the discrepencies between the PEW and Quotebank analysis. Using Flair instead could potentially be a good change. However, the FLzir accuracy is still quite low, so it will still incurr some uncertainties, albeit at a lower scale. 
+
 #### Keyword enrichment
 
 #### Reducing bias : Media sources

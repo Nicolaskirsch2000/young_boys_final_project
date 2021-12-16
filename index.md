@@ -65,6 +65,9 @@ This distinction is further made statistically significant with a mean p-value o
 
  It is thus clear that the quotation sentiment from Einnews does not come from the same distribution as the others, and looking at its higher median sentiment, it seems that it infers a positive bias towards the USA. Filtering this media out could therefore lead to improved results and a dataset more comparable to the PEW data. 
 
+### Reducing bias : Politicians vs non-politicians
+As we consider politicians, one could have the prejudgement that their sentiments does not reflect the overall opinion of their country with respect to the U.S. indeed, there are political and/or economical concerns to consider when a politician make any public declaration, in particular when he is part of the government.  
+
 
 ### Reducing bias : Speaker importance
 

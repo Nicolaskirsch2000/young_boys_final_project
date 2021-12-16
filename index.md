@@ -8,8 +8,7 @@ The following figure shows the average of the U.S. favorability in different cou
 
 ![PEW_Heatmap](/pew_heatmap.jpg)
 
-As we see in this heatmap, the study covers only 52 out of 195 countries in the world. In addition, only 9 countries in this study have the results for all the years between 2015 till 2020. 
-
+As we see in this heatmap, the study covers only 52 out of 195 countries in the world. In addition, only 9 countries in this study have the results for all the years between 2015 till 2020.
 
 ### Quotebank : what does it says ? 
 
@@ -20,6 +19,20 @@ The map plus does not match
 Trump and obama 
 
 ### This is an issue ? Could we improve comparability ? 
+
+#### Sentiment analysis tool 
+
+Until now, all the sentiment analysis has been done using the Natural Language Toolkit (NLTK) library. This is a referene for sentiment analysis, but many other tools are available, and could potentially help up improve our results. It is indeed possible that the NLTK tool does not apply well to our data and some other would better analyse the Quotebank citations. 
+
+To verify this, a random sample of quotes was extracted and a sentiment score (-1, -0.5, 0, 0.5, 1) was assigned by humans to each quote. The different tools were then tested on the sentiment score were compared. The tools used were : NTLK, Flair, and TextBlob. The accuracies are shown below : 
+
+| | NLTK | TextBlob | Flair | 
+|-------|:-------:|-------|-------| 
+|Accuracy| 54 % | 42 % | 66 % |
+
+
+
+NLTK is thus not the most accurate tool for the data at hand, as its accuracy was of 54% compared to Flair, with 66%. This missmatch in sentiment might be a reason for the discrepencies between the PEW and Quotebank analysis. Using Flair instead could potentially be a good change. However, the FLzir accuracy is still quite low, so it will still incurr some uncertainties, albeit at a lower scale. 
 
 #### Keyword enrichment
 
@@ -39,7 +52,7 @@ The median sentiment and distribution of the 30 most common medias are plotted b
 We can see that most of them indeed have a media score in the vicinity of 0, going from about -0.1 to 0.3. There is however one media that seems to stand out, with a much higher sentiment score beyond  0.4. This media is Einnews and it thus seems to have a different perception of sentiment towards the US. 
 This distinction is further made statistically significant with a mean p-value of 1.25*10^-16 when doing a t-test between its distribution and the distribution of all the other medias. This is further enhanced by the p-value heatmap shown below. Einnews is indeed the only media with no p-values above 0.05 for any of the other medias. It is true that some other medias seem to have low link to the others, but they still have a p-value over 0.05 with at least one other media. 
 
-![Heatmap_pval](/heatmap_pval.PNG)
+![Heatmap_pval](/pval.PNG)
 
  It is thus clear that the quotation sentiment from Einnews does not come from the same distribution as the others, and looking at its higher median sentiment, it seems that it infers a positive bias towards the USA. Filtering this media out could therefore lead to improved results and a dataset more comparable to the PEW data. 
 
@@ -58,4 +71,4 @@ Political vs cultural
 
 Most common topics
 
-<iframe src="final_map.html" style="width: 1000px; height: 400px; border: 0px"></iframe>
+<iframe src="final_map.html" style="width: 1000px;  height: 400px; border: 0px"></iframe>

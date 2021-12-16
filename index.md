@@ -12,9 +12,17 @@ As we see in this heatmap, the study covers only 52 out of 195 countries in the 
 
 ### Quotebank : what does it says ? 
 
-The map plus does not match 
+Quotebank is a dataset ...
+In this work, we 
+
+![WorldMapInitial](love_us_initial.png)
+
 
 ### Are the two data sources comparable
+No, they are not comparable.
+![InitialCompare](compare_pew.png)
+
+### A new comparable study
 
 Trump and obama 
 
@@ -70,5 +78,8 @@ New sentiment
 Political vs cultural
 
 Most common topics
+<iframe src="ldavis_150.html" style="width: 1000px;  height: 400px; border: 0px"></iframe>
+![WordCloud](wordcloud.png)
+
 
 <iframe src="final_map.html" style="width: 1000px;  height: 400px; border: 0px"></iframe>

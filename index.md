@@ -96,6 +96,7 @@ And then do the ratio of the number of countries of the list a. appearing in the
 
 
 ### Reducing bias : Speaker importance
+Another important aspect that we have neglect is that the quotebank we have there is not one entry per individual as in the pew dataset, but per quotation. As a result, a speaker that appears frequently in our dataset will have a greater importance, since is opinion will be taken into account multiple times. To avoid this phenomenon, we have considered to average the sentiment of each individual for each year to be more closer to how the pew dataset was made. 
 
 ### Is it better now ? 
 

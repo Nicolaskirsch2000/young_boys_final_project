@@ -23,8 +23,10 @@ Quotebank [1] is an open corpus of 178 million quotations extracted from 162 mil
 ![WorldMapInitial](love_us_initial.png)
 
 
-### Are the two data sources comparable
-No, they are not comparable.
+### Pew vs the Quotebank
+The major drawback of the pew dataset is its incompleteness as we said. But by doing a sentiment analysis over the quotebank dataset over the quotes speaking about the U.S.A could in fact help to infer the "real" sentiment of the population of countries for which we do not have any data from the Pew dataset. It is sure that the two datasets were generated completely in a different way, so we should expect differences, but maybe theses dissimilarities are not so significant. So… let's try !
+First, we should filter the quotebank so that we drop quotations not related to the U.S.. To do so, we only keep sentences containing keywords such as "U.S.A.", "United States". Afterwards, one need to label the quotes, the nltk library of python offers us a simple way to do this. Then foreach country we compute the mean sentiment of all its quotes and finally compare it with Pew. Here are the results : 
+
 ![InitialCompare](compare_pew.png)
 
 ### A new comparable study

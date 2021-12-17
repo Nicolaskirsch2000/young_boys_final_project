@@ -136,6 +136,8 @@ Using the quotes in  Quotebank was interesting to assess the sentiment of countr
 
 Even after this step of bias removal, providing a clear answer to the favourability towards the USA questions seems to be very complex, given the number of parameters it entails. Using the Quotebank data however enables us to gain some insight on the trends linked to this question. Regarding well established conflictual countries, these quotes indeed seem to validate the trends already known. For more favourable countries, the sentiment towards the USA does not reach extreme positive nor negative scores but remains close to neutrality. 
 
+Nevertheless, this analysis could be extended by focusing on specific countries rather than process them altogether. Actually, each country processes the information in a different manner depending on its culture, the politic government in place, and so on. By omitting these disparities, one can get a global view of the opinion of the nations, but with its limits as we have shown.
+
 <iframe src="ldavis_150.html" style="width: 1000px;  height: 400px; border: 0px"></iframe>
 ![WordCloud](wordcloud.png)
 

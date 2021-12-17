@@ -31,13 +31,13 @@ First, we should filter the quotebank so that we drop quotations not related to 
 
 ### A new comparable study
 
-As seen above, comparing the scores from the PEW data and the Quotebank does not provide usable results. It indeed seems that both values are not comparable as they are. However, it is possible to inner compare the PEW data and the QUotebank data, between different years for example. Doing so provides trends for the two sources, and these could be then benchmarked one against the other. 
+As seen above, comparing the scores from the PEW data and the Quotebank does not provide usable results. It indeed seems that both values are not comparable as they are. However, it is possible to compare the PEW data and the Quotebank data between different years. Doing so provides trends for the two sources, and these could be then benchmarked one against the other.
 
-Looking at the sentiment before and after a striking event could provide a shift in sentiment sufficiently important for having significant results. With this in mind, a change of presidency seems to be a good event. The sentiment per country for the last two years of Obama's and Trump presidency are thus compared for PEW and Quotebank. 
+Looking at the sentiment before and after a special event could provide a shift in opinion sufficiently important for having significant results. With this in mind, a change of presidency seems to be a good event. For the last two years of Obama's and Trump's presidency, the sentiment per country is thus compared for PEW and Quotebank.
+
+At first, we considered the quoting bank from 2015 to 2020 and manually defined keywords "US," "U.S," "USA," and "United States," then extracted the data that contained these keywords. We identified the speaker nationality of these quotes and performed a sentiment analysis. We investigated and compared the distribution of the sentiments analysis results between the quoting bank and PEW for 29 countries. We observed that only 10 countries from the quoting bank over 29 countries from PEW follow the same behavior. For example, in the figure below, we compare the US favourability seen by India and Nigeria based on our references, PEW, and the quoting bank. By comparing the mean and median, we observe that the US favourability decreased for both countries. However, the p-values of the quoting bank are high, which indicates that our evidence is not strong enough to suggest an effect exists in the US favourability. In the following section, we study different ideas to enhance the comparability of the PEW and quoting bank.
 
 ![PEW_Heatmap](/before_preprocessing.png)
-
-Trump and obama 
 
 ### This is an issue ? Could we improve comparability ? 
 

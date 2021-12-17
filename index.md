@@ -116,7 +116,8 @@ We examined and compared the distribution of the sentiments analysis results bet
 
 
 Now that the Quotebank data seems to be more aligned with the PEW dataset, it is time to look for an answer to our main question : How favourable are countries to the USA? To attempt to provide an answer, year per year data on mean sentiment, main positive and negative topics and difference between politicians and non-politicians were aggregated in the following interactive map. 
-By selecting a year in the top right, one can see all the data corresponding. The politicians vs non-politician data has been normalised, with values going from 0 to 1.
+
+By selecting a year in the top right layer option (white square), one can see all the data corresponding. The politicians vs non-politician data has been normalised, with values going from 0 to 1.
 
 <iframe src="html_files/final_map.html" style="width: 600px;  height: 400px; border: 0px"></iframe>
 

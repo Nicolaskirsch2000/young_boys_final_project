@@ -105,8 +105,11 @@ To conclude, our first belief that the quotes of the politicians induce a bias w
 
 ### Improvements to Quotebank-PEW comparisons ? 
 
+We applied multiple ideas to enhance the comparability of the PEW and quoting bank, for instance, using a different sentiment analysis tool, data augmentation by performing keyword enrichment, and reducing biases such media sources. The media might be biased and lean towards or against someone or something. In most countries, media bias is thought to either lean to the left or right, favoring liberal or conservative politics.
+
+We examined and compared the distribution of the sentiments analysis results between the quoting bank and PEW for 29 countries again. We witnessed that 15 countries from the quoting bank over 29 countries from PEW follow the same behavior. Let's consider India and Nigeria one more time. We see a decrease in US favourability in terms of mean and median for both countries. We consider the p-value again to judge our results. However, this time, the p-value for the quoting bank is much lower, which indicates that the results are replicable.
+
 ![PEW_Heatmap](figures/after_preprocessing.png)
-Trump vs Obame v2
 
 ### Insights on US favorability across the world ? 
 

@@ -55,6 +55,10 @@ As a side note, Flair uses neural networks internally to proceed, therefore usin
 
 #### Keyword enrichment
 
+We considered the quoting bank from 2015 to 2020, containing 18.702Go of data. At first, we considered a manual approach where we identified the relevant keywords for our objective. We defined keywords "US," "U.S," "USA," and "United States," then extracted 253.1Mo of data that contained these keywords. We identified the speaker nationally using Wikidata, a free database to support Wikipedia. It enables us to access additional metadata such as nationality about the speakers in the Quotebank dataset. Finally, we performed sentiment analysis which is a text analysis that determines polarity within the text. Then we study the positiveness or negativeness of the quotes of all countries towards the United States.
+
+However, we will enrich the keywords to make our sentiment analysis results more attractive and trustworthy. Building a strong keyword list is crucial in any search in data analysis. To achieve this goal, we extract all American speakers from Wikidata and determine which ones are present in the "quotes-2019-nytimes.json.bz2" dataset. We discover the most frequent American speakers and create enriched keywords. Thus, we filter the quotes from 2015 to 2020 containing one of the new keywords.
+
 #### Reducing bias : Media sources
 
 A first possible source of bias lies I the medias. Indeed, even if attempting (or not) to be impartial on the subjects treated, articles are still written by humans and carry thus some point of view and the question treated. For this reason, it is possible that the quotes included in articles are selected to fit a narrative, discarding the quotes going in a opposing direction, incurring bias in the quotation corpus that is Quotebank. 

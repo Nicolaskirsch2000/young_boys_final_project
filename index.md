@@ -110,11 +110,18 @@ We examined and compared the distribution of the sentiments analysis results bet
 
 ![PEW_Heatmap](figures/after_preprocessing.png)
 
-### Insights on US favorability across the world ? 
+### Insights on US favorability across the world 
 
+#### Beyond the PEW dataset!
+We showed that we could have comparable results with PEW in U.S. favorability using the QuoteBank dataset. Here, we will go beyond a single sentiment extracted from quotes. Thanks to Quotebank, we can obtain more information than PEW about the people's opinion about the united states. Here, we find the topics that people around the world have about the U.S. image. The following image shows the topics extracted from the quotations with the abovementioned keywords. You can see the main topic keywords on the left-hand side panel by clicking on every topic.
 
+<iframe src="html_files/ldavis_150.html" style="width: 1300px;  height: 900px; border: 0px"></iframe>
 
-Now that the Quotebank data seems to be more aligned with the PEW dataset, it is time to look for an answer to our main question : How favourable are countries to the USA? To attempt to provide an answer, year per year data on mean sentiment, main positive and negative topics and difference between politicians and non-politicians were aggregated in the following interactive map. 
+For instance, choose topic number 60. It is about health care! Amazing! So, now change to topic #46; it is talking about North Korea! Thus, the topics are extracted; let's separate them by the countries and by years.
+
+#### What can we say ? 
+
+With this additional information, it is time to look for an answer to our main question : How favourable are countries to the USA? To attempt to provide an answer, year by year data on mean sentiment, main positive and negative topics and difference between politicians and non-politicians were aggregated in the following interactive map. 
 
 By selecting a year in the top right layer option (white square), one can see all the data corresponding. The politicians vs non-politician data has been normalised, with values going from 0 to 1.
 
@@ -141,4 +148,3 @@ Even after this step of bias removal, providing a clear answer to the favourabil
 
 Nevertheless, this analysis could be extended by focusing on specific countries rather than process them altogether. Actually, each country processes the information in a different manner depending on its culture, the politic government in place, and so on. By omitting these disparities, one can get a global view of the opinion of the nations, but with its limits as we have shown.
 
-<iframe src="html_files/ldavis_150.html" style="width: 1300px;  height: 900px; border: 0px"></iframe>

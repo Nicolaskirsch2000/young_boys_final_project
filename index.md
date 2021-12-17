@@ -10,7 +10,7 @@ Pew Research Center is an American center that conducts public opinion polling t
 In this work, we extract the U.S. favorability from the PEW datasets for 2015-2020, the same years that we have data in QuoteBank.  
 The following figure shows the average of the U.S. favorability in different countries every year. The blank boxes represent the years that the study is not conducted in that specific country.
 
-![PEW_Heatmap](/pew_heatmap.jpg)
+![PEW_Heatmap](figures/pew_heatmap.jpg)
 
 As we see in this heatmap, the study covers only 52 out of 195 countries in the world. In addition, only 9 countries in this study have the results for all the years between 2015 till 2020.
 
@@ -20,14 +20,14 @@ Quotebank [1] is an open corpus of 178 million quotations extracted from 162 mil
 
 [1] Timoté Vaucher, Andreas Spitz, Michele Catasta and Robert West. 2021. Quotebank: A Corpus of Quotations from a Decade of News.
 
-![WorldMapInitial](love_us_initial.png)
+![WorldMapInitial](figures/love_us_initial.png)
 
 
 ### Pew vs the Quotebank
 The major drawback of the pew dataset is its incompleteness as we said. But by doing a sentiment analysis over the quotebank dataset over the quotes speaking about the U.S.A could in fact help to infer the "real" sentiment of the population of countries for which we do not have any data from the Pew dataset. It is sure that the two datasets were generated completely in a different way, so we should expect differences, but maybe theses dissimilarities are not so significant. So… let's try !
 First, we should filter the quotebank so that we drop quotations not related to the U.S.. To do so, we only keep sentences containing keywords such as "U.S.A.", "United States". Afterwards, one need to label the quotes, the nltk library of python offers us a simple way to do this. Then foreach country we compute the mean sentiment of all its quotes and finally compare it with Pew. Here are the results : 
 
-![InitialCompare](compare_pew.png)
+![InitialCompare](figures/compare_pew.png)
 
 ### A new comparable study
 
@@ -37,7 +37,7 @@ Looking at the sentiment before and after a special event could provide a shift 
 
 At first, we considered the quoting bank from 2015 to 2020 and manually defined keywords "US," "U.S," "USA," and "United States," then extracted the data that contained these keywords. We identified the speaker nationality of these quotes and performed a sentiment analysis. We investigated and compared the distribution of the sentiments analysis results between the quoting bank and PEW for 29 countries. We observed that only 10 countries from the quoting bank over 29 countries from PEW follow the same behavior. For example, in the figure below, we compare the US favourability seen by India and Nigeria based on our references, PEW, and the quoting bank. By comparing the mean and median, we observe that the US favourability decreased for both countries. However, the p-values of the quoting bank are high, which indicates that our evidence is not strong enough to suggest an effect exists in the US favourability. In the following section, we study different ideas to enhance the comparability of the PEW and quoting bank.
 
-![PEW_Heatmap](/before_preprocessing.png)
+![PEW_Heatmap](figures/before_preprocessing.png)
 
 ### This is an issue ? Could we improve comparability ? 
 
@@ -75,12 +75,12 @@ A media bias could be regarding the target of the sources : the US1. Some medias
 
 The median sentiment and distribution of the 30 most common medias are plotted below : 
 
-![Mean sent](/mean_sent.PNG)
+![Mean sent](figures/mean_sent.PNG)
 
 We can see that most of them indeed have a media score in the vicinity of 0, going from about -0.1 to 0.3. There is however one media that seems to stand out, with a much higher sentiment score beyond  0.4. This media is Einnews and it thus seems to have a different perception of sentiment towards the US. 
 This distinction is further made statistically significant with a mean p-value of 1.25*10^-16 when doing a t-test between its distribution and the distribution of all the other medias. This is further enhanced by the p-value heatmap shown below. Einnews is indeed the only media with no p-values above 0.05 for any of the other medias. It is true that some other medias seem to have low link to the others, but they still have a p-value over 0.05 with at least one other media. 
 
-![Heatmap_pval](/pval.PNG)
+![Heatmap_pval](figures/pval.PNG)
 
  It is thus clear that the quotation sentiment from Einnews does not come from the same distribution as the others, and looking at its higher median sentiment, it seems that it infers a positive bias towards the USA. Filtering this media out could therefore lead to improved results and a dataset more comparable to the PEW data. 
 
@@ -92,7 +92,7 @@ Studying the difference of distribution of the politicians, non-politicians and 
 
 To begin with, the proportion of countries for which we have no strong evidence that the mean is the same for the non-politicians and the politicians is clearly superior than when we compare them to the pew dataset (37.2% compared to 9.9% and 16.4% respectively). Another fact is that in average, the politician dataset seems to be closer to the pew dataset than the non-politician dataset.  
 But in fact, when we look closer to the outcome we observe that there is a correlation between the list of countries that do not reject the null hypothesis when comparing the politicians and the non-politicians and the respective list of countries that do not reject the null hypothesis between the PEW dataset and the (non-)politicians. In other words, when the distribution between the PEW dataset and the (non-)politicians is similar for a given country, it increases the chance that the distribution of the sentiments of the politicians and the ones of the non-politicians look also alike. Here is a graph representing this :
-![Heatmap_politic](politic_comp.jpg)
+![Heatmap_politic](figures/politic_comp.jpg)
 As an example, when we look at :  
 a. the list of countries that in a given year the distribution of the politicians and the pew dataset were similar  
 b.  the list of countries that in a given year the distribution of the non-politicians and the politicians were similar  
@@ -107,7 +107,7 @@ Another important aspect that we have neglect is that the quotebank we have ther
 
 ### Is it better now ? 
 
-![PEW_Heatmap](/after_preprocessing.png)
+![PEW_Heatmap](figures/after_preprocessing.png)
 Trump vs Obame v2
 
 ### Good, now, what do we learn from quotebank on US favorability across the world ? 
@@ -117,7 +117,7 @@ Trump vs Obame v2
 Now that the Quotebank data seems to be more aligned with the PEW dataset, it is time to look for an answer to our main question : How favourable are countries to the USA? To attempt to provide an answer, year per year data on mean sentiment, main positive and negative topics and difference between politicians and non-politicians were aggregated in the following interactive map. 
 By selecting a year in the top right, one can see all the data corresponding. The politicians vs non-politician data has been normalised, with values going from 0 to 1.
 
-<iframe src="final_map.html" style="width: 1000px;  height: 400px; border: 0px"></iframe>
+<iframe src="html_files/final_map.html" style="width: 1000px;  height: 400px; border: 0px"></iframe>
 
 
 It is first interesting to look at the countries with the most tense geopolitical relationships with the US : Russia, Iran, China, and North Korea. Overall, the sentiment displayed by these countries seems logical, with it being neutral at best. It even gets worse in 2019, with Russia and Iran becoming quite significantly negative. 
@@ -138,6 +138,6 @@ Even after this step of bias removal, providing a clear answer to the favourabil
 
 Nevertheless, this analysis could be extended by focusing on specific countries rather than process them altogether. Actually, each country processes the information in a different manner depending on its culture, the politic government in place, and so on. By omitting these disparities, one can get a global view of the opinion of the nations, but with its limits as we have shown.
 
-<iframe src="ldavis_150.html" style="width: 1000px;  height: 400px; border: 0px"></iframe>
+<iframe src="html_files/ldavis_150.html" style="width: 1000px;  height: 400px; border: 0px"></iframe>
 ![WordCloud](wordcloud.png)
 

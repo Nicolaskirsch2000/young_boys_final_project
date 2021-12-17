@@ -131,10 +131,10 @@ In Europe however, there is much less temporal variability, with most countries 
 
 ### Conclusion
 
-Conclusion about the bias process
 
-In conclusion, providing a clear answer to the favourability towards the USA questions seems to be very complex, given the number of parameters it entails. Using the Quotebank data however enables us to gain some insight on the trends linked to this question. Regarding well established conflictual countries, these quotes indeed seem to validate the trends already known. For more favourable countries, the sentiment towards the USA does not reach extreme positive nor negative scores but remains close to neutrality. 
+Using the quotes in  Quotebank was interesting to assess the sentiment of countries towards the USA, but the data contained significant bias that needed to be accounted for to yield interesting results. Some medias indeed did not broadcast a representative variety of sentiments, and the speaker importance led to some point of views being over-representative of a population. 
 
+Even after this step of bias removal, providing a clear answer to the favourability towards the USA questions seems to be very complex, given the number of parameters it entails. Using the Quotebank data however enables us to gain some insight on the trends linked to this question. Regarding well established conflictual countries, these quotes indeed seem to validate the trends already known. For more favourable countries, the sentiment towards the USA does not reach extreme positive nor negative scores but remains close to neutrality. 
 
 <iframe src="ldavis_150.html" style="width: 1000px;  height: 400px; border: 0px"></iframe>
 ![WordCloud](wordcloud.png)

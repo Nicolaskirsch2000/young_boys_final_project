@@ -25,9 +25,7 @@ In this work, we
 ### Are the two data sources comparable
 The major drawback of the pew dataset is its incompleteness as we said. But by doing a sentiment analysis over the quotebank dataset over the quotes speaking about the U.S.A could in fact help to infer the "real" sentiment of the population of countries for which we do not have any data from the Pew dataset. It is sure that the two datasets were generated completely in a different way, so we should expect differences, but maybe theses dissimilarities are not so significant. So… let's try !
 First let's label the quotes, the nltk library of python offers us a simple way to do this. Then foreach country we compute the mean sentiment of all its quotes and finally compare it with Pew. Here are the results : 
-
 ![InitialCompare](compare_pew.png)
-
 TODO : discuss results + p-value
 ### A new comparable study
 

@@ -67,6 +67,17 @@ This distinction is further made statistically significant with a mean p-value o
 
 ### Reducing bias : Politicians vs non-politicians
 As we consider politicians, one could have the prejudgement that their sentiments does not reflect the overall opinion of their country with respect to the U.S. indeed, there are political and/or economical concerns to consider when a politician make any public declaration, in particular when he is part of the government.  
+As a first result, the proportion of the quotes made by politicians represents more than 38% of the dataset speaking about the United States each year. In addition, around 13% of the speaker are involved in politics. This is a first indication that the quotebank is not equally distributed with respect to the profession, and that some people's opinion (here the politicians) "counts" more than others due to the number of quotes they have made.
+
+Studying the difference of distribution of the politicians, non-politicians and the pew dataset through the computation of the p-value gives us interesting results. As a side remark, we have chosen an alpha level of 0.05 for a two-sided statisic test and we have also removed the countries that have less than 20 different speakers to not get too noisy values for the statistic test.
+
+To begin with, the proportion of countries for which we have no strong evidence that the mean is the same for the non-politicians and the politicians is clearly superior than when we compare them to the pew dataset (37.2% compared to 9.9% and 16.4% respectively). Another fact is that in average, the politician dataset seems to be closer to the pew dataset than the non-politician dataset.
+But in fact, when we look closer to the outcome we observe that there is a correlation between the list of countries that do not reject the null hypothesis when comparing the politicians and the non-politicians and the respective list of countries that do not reject the null hypothesis between the PEW dataset and the (non-)politicians. In other words, when the distribution between the PEW dataset and the (non-)politicians is similar for a given country, it increases the chance that the distribution of the sentiments of the politicians and the ones of the non-politicians look also alike.
+As an example, when we look at :
+a. the list of countries that in a given year the distribution of the politicians and the pew dataset were similar
+b.  the list of countries that in a given year the distribution of the non-politicians and the politicians were similar
+And then do the ratio of the number of countries of the list a. appearing in the list b., and average over the years, we get a ratio of 55.7%. Nevertheless, a possible wrong deduction would say that if the politicians and the non-politicians share approximately the same opinion, then the similarity between their quotes sentiment and the pew sentiment value is greater. As an counter-example, we observe that four years over six, there was not enough indication that the distribution of the politicians and the non-politicians where different in Nigeria. However, there has always been over all the years a strong evidence that the Nigeria's sentiment distribution of the quotes were not sharing the same distribution as the pew dataset.
+
 
 
 ### Reducing bias : Speaker importance

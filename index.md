@@ -1,4 +1,4 @@
- 
+## How favourable are countries to the USA ? 
 
 The USA is one of the biggest geopolitical strengths on the planet. Its influence across the world is unmatched, with several Cultural and Economic industries impacting nearly every countries. However, this hegemony is not unanimous and several countries are in direct conflict with the USA and the favorability towards the US is not complete in other countries. Assessing how favorable are countries to the USA thus seems as an interesting question. 
 
@@ -23,7 +23,7 @@ Quotebank [1] is an open corpus of 178 million quotations extracted from 162 mil
 ![WorldMapInitial](figures/love_us_initial.png)
 
 
-### Pew vs the Quotebank
+### Pew vs  Quotebank
 The major drawback of the pew dataset is its incompleteness as we said. But by doing a sentiment analysis over the quotebank dataset over the quotes speaking about the U.S.A could in fact help to infer the "real" sentiment of the population of countries for which we do not have any data from the Pew dataset. It is sure that the two datasets were generated completely in a different way, so we should expect differences, but maybe theses dissimilarities are not so significant. So… let's try !
 First, we should filter the quotebank so that we drop quotations not related to the U.S.. To do so, we only keep sentences containing keywords such as "U.S.A.", "United States". Afterwards, one need to label the quotes, the nltk library of python offers us a simple way to do this. Then foreach country we compute the mean sentiment of all its quotes and finally compare it with Pew. Here are the results : 
 
@@ -102,15 +102,13 @@ To conclude, our first belief that the quotes of the politicians induce a bias w
 
 
 
-### Reducing bias : Speaker importance
-Another important aspect that we have neglect is that the quotebank we have there is not one entry per individual as in the pew dataset, but per quotation. As a result, a speaker that appears frequently in our dataset will have a greater importance, since is opinion will be taken into account multiple times. To avoid this phenomenon, we have considered to average the sentiment of each individual for each year to be more closer to how the pew dataset was made. 
 
-### Is it better now ? 
+### Improvements to Quotebank-PEW comparisons ? 
 
 ![PEW_Heatmap](figures/after_preprocessing.png)
 Trump vs Obame v2
 
-### Good, now, what do we learn from quotebank on US favorability across the world ? 
+### Insights on US favorability across the world ? 
 
 
 

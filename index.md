@@ -49,13 +49,9 @@ Until now, all the sentiment analysis has been done using the Natural Language T
 
 To verify this, a random sample of 50 quotes was extracted and a sentiment score (-1, -0.5, 0, 0.5, 1) was assigned by humans to each quote. The different tools were then tested on the sentiment score were compared. The tools used were : NTLK, Flair, and TextBlob. The accuracies are shown below : 
 
-<p align="center">
     | | NLTK | TextBlob | Flair | 
 |-------|:-------:|-------|-------| 
 |Accuracy| 54 % | 42 % | 56 % |
-
-
-</p>
 
 
 NLTK is thus not the most accurate tool for the data at hand, as its accuracy was of 54% compared to Flair, with 56%. Despite the quite low difference between both, this missmatch in sentiment might be a reason for the discrepencies between the PEW and Quotebank analysis. Using Flair instead could potentially be a good change, when we consider that there is a quite high variance due to the small size of the test set. However, the Flair accuracy is still quite low, so it will still incurr some uncertainties, albeit at a lower scale.  

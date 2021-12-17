@@ -1,4 +1,4 @@
-## How favorable are countries to the USA ? 
+ 
 
 The USA is one of the biggest geopolitical strengths on the planet. Its influence across the world is unmatched, with several Cultural and Economic industries impacting nearly every countries. However, this hegemony is not unanimous and several countries are in direct conflict with the USA and the favorability towards the US is not complete in other countries. Assessing how favorable are countries to the USA thus seems as an interesting question. 
 

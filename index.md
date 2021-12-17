@@ -1,6 +1,6 @@
 ## How favorable are countries to the USA ? 
 
-The USA is one of the biggest geopolitical stregnth on the planet. Its influence across the world is unmatched, with several Cultural and Economic industries impacting nearly every countries. However, this hegemony is not unanimous and several countries are in direct conflict with the USA and the favorability towards the US is not complete in other countries. Assessing how favorable are countries to the USA thus seems as an interesting question. 
+The USA is one of the biggest geopolitical strengths on the planet. Its influence across the world is unmatched, with several Cultural and Economic industries impacting nearly every countries. However, this hegemony is not unanimous and several countries are in direct conflict with the USA and the favorability towards the US is not complete in other countries. Assessing how favorable are countries to the USA thus seems as an interesting question. 
 
 In this data story, we aim to provide an answer to this by analysing what people from different nationalities say about the USA.
 
@@ -16,17 +16,17 @@ As we see in this heatmap, the study covers only 52 out of 195 countries in the 
 
 ### Quotebank : what does it says ? 
 
-Quotebank is a dataset ...
-In this work, we 
+Quotebank [1] is an open corpus of 178 million quotations extracted from 162 million English news articles published between 2008 and 2020. The quotations were extracted and attributed using Quobert; a distantly and minimally supervised end-to-end, language-agnostic framework for quotation attribution. In this work, we want to evaluate the US favorability, specifically between Barak Obama and Donald Trump's presidency; thus, we consider only years from 2015 to 2020.
+
+[1] Timoté Vaucher, Andreas Spitz, Michele Catasta and Robert West. 2021. Quotebank: A Corpus of Quotations from a Decade of News.
 
 ![WorldMapInitial](love_us_initial.png)
 
 
 ### Are the two data sources comparable
-The major drawback of the pew dataset is its incompleteness as we said. But by doing a sentiment analysis over the quotebank dataset over the quotes speaking about the U.S.A could in fact help to infer the "real" sentiment of the population of countries for which we do not have any data from the Pew dataset. It is sure that the two datasets were generated completely in a different way, so we should expect differences, but maybe theses dissimilarities are not so significant. So… let's try !
-First let's label the quotes, the nltk library of python offers us a simple way to do this. Then foreach country we compute the mean sentiment of all its quotes and finally compare it with Pew. Here are the results : 
+No, they are not comparable.
 ![InitialCompare](compare_pew.png)
-TODO : discuss results + p-value
+
 ### A new comparable study
 
 As seen above, comparing the scores from the PEW data and the Quotebank does not provide usable results. It indeed seems that both values are not comparable as they are. However, it is possible to inner compare the PEW data and the QUotebank data, between different years for example. Doing so provides trends for the two sources, and these could be then benchmarked one against the other. 
@@ -101,7 +101,7 @@ Another important aspect that we have neglect is that the quotebank we have ther
 
 ### Is it better now ? 
 
-Trump vs Obama v2
+Trump vs Obame v2
 
 ### Good, now, what do we learn from quotebank on US favorability across the world ? 
 

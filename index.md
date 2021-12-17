@@ -1,5 +1,9 @@
 ## How favorable are countries to the USA ? 
 
+The USA is one of the biggest geopolitical stregnth on the planet. Its influence across the world is unmatched, with several Cultural and Economic industries impacting nearly every countries. However, this hegemony is not unanimous and several countries are in direct conflict with the USA and the favorability towards the US is not complete in other countries. Assessing how favorable are countries to the USA thus seems as an interesting question. 
+
+In this data story, we aim to provide an answer to this by analysing what people from different nationalities say about the USA.
+
 ### PEW analysis, what does it says ? 
 
 Pew Research Center is an American center that conducts public opinion polling to analyze the issues, attitudes, and trends shaping the world. They study a wide range of topics such as politics, immigration, ethnicity, religion, economy, and science. One of the principal subjects in these researches is U.S. global image and reputation, i.e., what people around the world like about American society and politics. In Pew's survey, random people worldwide are asked to express an opinion of the U.S. The provided choices are "Very favorable," "Somewhat favorable," "Somewhat unfavorable," "Very unfavorable," "Refused," and "Don't know." The pew research center releases the results of this study once per year.

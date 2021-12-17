@@ -112,18 +112,13 @@ Trump vs Obame v2
 
 ### Good, now, what do we learn from quotebank on US favorability across the world ? 
 
-New sentiment 
-
-Political vs cultural
-
-Most common topics
-
 
 
 Now that the Quotebank data seems to be more aligned with the PEW dataset, it is time to look for an answer to our main question : How favourable are countries to the USA? To attempt to provide an answer, year per year data on mean sentiment, main positive and negative topics and difference between politicians and non-politicians were aggregated in the following interactive map. 
 By selecting a year in the top right, one can see all the data corresponding. The politicians vs non-politician data has been normalised, with values going from 0 to 1.
 
 <iframe src="final_map.html" style="width: 1000px;  height: 400px; border: 0px"></iframe>
+
 
 It is first interesting to look at the countries with the most tense geopolitical relationships with the US : Russia, Iran, China, and North Korea. Overall, the sentiment displayed by these countries seems logical, with it being neutral at best. It even gets worse in 2019, with Russia and Iran becoming quite significantly negative. 
  For these countries another interesting aspect to look at are the most common topics. Nearly for every year, the most positive topic is themselves (Russia for Russia…). This makes sense, as people originating from the countries would tend to defend their country and thus say positive things about it when in altercation with their main competitor. Regarding negative topics it often relates to the USA foreign actions, with for example Russia being negative about the USA in Iran in 2019 and Iran being about the President himself. This once again seems to make sense, as these external interventions are often the reasons for the conflictual situations. 

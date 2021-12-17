@@ -24,9 +24,15 @@ No, they are not comparable.
 
 ### A new comparable study
 
+As seen above, comparing the scores from the PEW data and the Quotebank does not provide usable results. It indeed seems that both values are not comparable as they are. However, it is possible to inner compare the PEW data and the QUotebank data, between different years for example. Doing so provides trends for the two sources, and these could be then benchmarked one against the other. 
+
+Looking at the sentiment before and after a striking event could provide a shift in sentiment sufficiently important for having significant results. With this in mind, a change of presidency seems to be a good event. The sentiment per country for the last two years of Obama's and Trump presidency are thus compared for PEW and Quotebank. 
+
 Trump and obama 
 
 ### This is an issue ? Could we improve comparability ? 
+
+Even with relative comparison, the results seem to differ significantly between PEW and Quotebank. In this section, several potential sources of bias and imporvements are studied to assess whether taking them into account can improve the comparability of the two datasets. 
 
 #### Sentiment analysis tool 
 

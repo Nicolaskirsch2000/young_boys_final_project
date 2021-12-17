@@ -96,6 +96,8 @@ a. the list of countries that in a given year the distribution of the politician
 b.  the list of countries that in a given year the distribution of the non-politicians and the politicians were similar  
 And then do the ratio of the number of countries of the list a. appearing in the list b., and average over the years, we get a ratio of 55.7%. Nevertheless, a possible wrong deduction would say that if the politicians and the non-politicians share approximately the same opinion, then the similarity between their quotes sentiment and the pew sentiment value is greater. As an counter-example, we observe in the graph that four years over six, there was not enough indication that the distribution of the politicians and the non-politicians where different in Nigeria. However, there has always been over all the years a strong evidence that the Nigeria's sentiment distribution of the quotes were not sharing the same distribution as the pew dataset.
 
+To conclude, our first belief that the quotes of the politicians induce a bias was not clearly observed in practice, in contrary, they were in average slightly closer to the "ground truth" in overall. For this reason no further filtering was made at this step.
+
 
 
 ### Reducing bias : Speaker importance

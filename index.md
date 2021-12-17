@@ -49,10 +49,13 @@ Until now, all the sentiment analysis has been done using the Natural Language T
 
 To verify this, a random sample of 50 quotes was extracted and a sentiment score (-1, -0.5, 0, 0.5, 1) was assigned by humans to each quote. The different tools were then tested on the sentiment score were compared. The tools used were : NTLK, Flair, and TextBlob. The accuracies are shown below : 
 
-| | NLTK | TextBlob | Flair | 
+<p align="center">
+    | | NLTK | TextBlob | Flair | 
 |-------|:-------:|-------|-------| 
 |Accuracy| 54 % | 42 % | 56 % |
 
+
+</p>
 
 
 NLTK is thus not the most accurate tool for the data at hand, as its accuracy was of 54% compared to Flair, with 56%. Despite the quite low difference between both, this missmatch in sentiment might be a reason for the discrepencies between the PEW and Quotebank analysis. Using Flair instead could potentially be a good change, when we consider that there is a quite high variance due to the small size of the test set. However, the Flair accuracy is still quite low, so it will still incurr some uncertainties, albeit at a lower scale.  
@@ -119,7 +122,9 @@ Now that the Quotebank data seems to be more aligned with the PEW dataset, it is
 
 By selecting a year in the top right layer option (white square), one can see all the data corresponding. The politicians vs non-politician data has been normalised, with values going from 0 to 1.
 
-<iframe src="html_files/final_map.html" style="width: 600px;  height: 400px; border: 0px"></iframe>
+<p align="center">
+    <iframe src="html_files/final_map.html" style="width: 600px;  height: 400px; border: 0px"></iframe>
+</p>
 
 
 It is first interesting to look at the countries with the most tense geopolitical relationships with the US : Russia, Iran, China, and North Korea. Overall, the sentiment displayed by these countries seems logical, with it being neutral at best. It even gets worse in 2019, with Russia and Iran becoming quite significantly negative. 

@@ -35,6 +35,8 @@ As seen above, comparing the scores from the PEW data and the Quotebank does not
 
 Looking at the sentiment before and after a striking event could provide a shift in sentiment sufficiently important for having significant results. With this in mind, a change of presidency seems to be a good event. The sentiment per country for the last two years of Obama's and Trump presidency are thus compared for PEW and Quotebank. 
 
+![PEW_Heatmap](/before_preprocessing.png)
+
 Trump and obama 
 
 ### This is an issue ? Could we improve comparability ? 
@@ -105,6 +107,7 @@ Another important aspect that we have neglect is that the quotebank we have ther
 
 ### Is it better now ? 
 
+![PEW_Heatmap](/after_preprocessing.png)
 Trump vs Obame v2
 
 ### Good, now, what do we learn from quotebank on US favorability across the world ? 
